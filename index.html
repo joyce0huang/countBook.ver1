@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#blockA">焦點</a>
+        <a href="#blockB">焦測</a>
+        <a href="#blockC">搶分題庫（上）</a>
+        <a href="#blockD">搶分題庫（下）</a>
+        <a href="#blockE">60天</a>
+        <a href="#blockF">上中下系列</a>
+        <a href="#blockG">其他專書</a>
+    </header>
+    <div class="wrap">
+        <h2 id="blockA">學測總複習焦點系列</h2>
+        <div class="block">
+            <div class="box">
+                <div class="title" onclick="showList(1)">
+                    <h3>學測總複習焦點<br>國文</h3>
+                    <h4>共<span class="totalbox" id="total1"></span>本</h4>
+                </div>
+                <div class="list list1">
+                    <p>
+                        <span><input id="layer1" type="text"> 層　</span>
+                        <span><input id="bale1" type="text"> 捆　</span>
+                        <span><input id="book1" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf1" type="text"> 本</p>
+                    <button onclick="countBook_16_8(1)" class="button" id="ok1">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(2)">
+                    <h3>學測總複習焦點<br>英文</h3>
+                    <h4>共<span class="totalbox" id="total2"></span>本</h4>
+                </div>
+                <div class="list list2">
+                    <p>
+                        <span><input id="layer2" type="text"> 層　</span>
+                        <span><input id="bale2" type="text"> 捆　</span>
+                        <span><input id="book2" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf2" type="text"> 本</p>
+                    <button onclick="countBook_16_11(2)" class="button" id="ok2">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(3)">
+                    <h3>學測總複習焦點<br>數學</h3>
+                    <h4>共<span class="totalbox" id="total3"></span>本</h4>
+                </div>
+                <div class="list list3">
+                    <p>
+                        <span><input id="layer3" type="text"> 層　</span>
+                        <span><input id="bale3" type="text"> 捆　</span>
+                        <span><input id="book3" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf3" type="text"> 本</p>
+                    <button onclick="countBook_15_7(3)" class="button" id="ok3">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(4)">
+                    <h3>學測總複習焦點<br>物理</h3>
+                    <h4>共<span class="totalbox" id="total4"></span>本</h4>
+                </div>
+                <div class="list list4">
+                    <p>
+                        <span><input id="layer4" type="text"> 層　</span>
+                        <span><input id="bale4" type="text"> 捆　</span>
+                        <span><input id="book4" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf4" type="text"> 本</p>
+                    <button onclick="countBook_20_7(4)" class="button" id="ok4">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(5)">
+                    <h3>學測總複習焦點<br>化學</h3>
+                    <h4>共<span class="totalbox" id="total5"></span>本</h4>
+                </div>
+                <div class="list list5">
+                    <p>
+                        <span><input id="layer5" type="text"> 層　</span>
+                        <span><input id="bale5" type="text"> 捆　</span>
+                        <span><input id="book5" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf5" type="text"> 本</p>
+                    <button onclick="countBook_16_7(5)" class="button" id="ok5">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(6)">
+                    <h3>學測總複習焦點<br>生物</h3>
+                    <h4>共<span class="totalbox" id="total6"></span>本</h4>
+                </div>
+                <div class="list list6">
+                    <p>
+                        <span><input id="layer6" type="text"> 層　</span>
+                        <span><input id="bale6" type="text"> 捆　</span>
+                        <span><input id="book6" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf6" type="text"> 本</p>
+                    <button onclick="countBook_20_7(6)" class="button" id="ok6">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(7)">
+                    <h3>學測總複習焦點<br>地科</h3>
+                    <h4>共<span class="totalbox" id="total7"></span>本</h4>
+                </div>
+                <div class="list list7">
+                    <p>
+                        <span><input id="layer7" type="text"> 層　</span>
+                        <span><input id="bale7" type="text"> 捆　</span>
+                        <span><input id="book7" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf7" type="text"> 本</p>
+                    <button onclick="countBook_16_10(7)" class="button" id="ok7">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(8)">
+                    <h3>學測總複習焦點<br>歷史</h3>
+                    <h4>共<span class="totalbox" id="total8"></span>本</h4>
+                </div>
+                <div class="list list8">
+                    <p>
+                        <span><input id="layer8" type="text"> 層　</span>
+                        <span><input id="bale8" type="text"> 捆　</span>
+                        <span><input id="book8" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf8" type="text"> 本</p>
+                    <button onclick="countBook_16_10(8)" class="button" id="ok8">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(9)">
+                    <h3>學測總複習焦點<br>地理</h3>
+                    <h4>共<span class="totalbox" id="total9"></span>本</h4>
+                </div>
+                <div class="list list9">
+                    <p>
+                        <span><input id="layer9" type="text"> 層　</span>
+                        <span><input id="bale9" type="text"> 捆　</span>
+                        <span><input id="book9" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf9" type="text"> 本</p>
+                    <button onclick="countBook_20_7(9)" class="button" id="ok9">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(10)">
+                    <h3>學測總複習焦點<br>公民</h3>
+                    <h4>共<span class="totalbox" id="total10"></span>本</h4>
+                </div>
+                <div class="list list10">
+                    <p>
+                        <span><input id="layer10" type="text"> 層　</span>
+                        <span><input id="bale10" type="text"> 捆　</span>
+                        <span><input id="book10" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf10" type="text"> 本</p>
+                    <button onclick="countBook(10)" class="button" id="ok10">OK</button>
+                </div>
+            </div>
+        </div>
+        <h2 id="blockB">學測總複習焦點測驗系列</h2>
+        <div class="block">
+            <div class="box">
+                <div class="title" onclick="showList(11)">
+                    <h3>學測總複習焦點測驗<br>國文</h3>
+                    <h4>共<span class="totalbox" id="total11"></span>本</h4>
+                </div>
+                <div class="list list11">
+                    <p>
+                        <span><input id="layer11" type="text"> 層　</span>
+                        <span><input id="bale11" type="text"> 捆　</span>
+                        <span><input id="book11" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf11" type="text"> 本</p>
+                    <button onclick="countBook_20_5(11)" class="button" id="ok11">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(12)">
+                    <h3>學測總複習焦點測驗<br>英文</h3>
+                    <h4>共<span class="totalbox" id="total12"></span>本</h4>
+                </div>
+                <div class="list list12">
+                    <p>
+                        <span><input id="layer12" type="text"> 層　</span>
+                        <span><input id="bale12" type="text"> 捆　</span>
+                        <span><input id="book12" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf12" type="text"> 本</p>
+                    <button onclick="countBook_16_5(12)" class="button" id="ok12">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(13)">
+                    <h3>學測總複習焦點測驗<br>數學</h3>
+                    <h4>共<span class="totalbox" id="total13"></span>本</h4>
+                </div>
+                <div class="list list13">
+                    <p>
+                        <span><input id="layer13" type="text"> 層　</span>
+                        <span><input id="bale13" type="text"> 捆　</span>
+                        <span><input id="book13" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf13" type="text"> 本</p>
+                    <button onclick="countBook_30_7(13)" class="button" id="ok13">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(14)">
+                    <h3>學測總複習焦點測驗<br>物理</h3>
+                    <h4>共<span class="totalbox" id="total14"></span>本</h4>
+                </div>
+                <div class="list list14">
+                    <p>
+                        <span><input id="layer14" type="text"> 層　</span>
+                        <span><input id="bale14" type="text"> 捆　</span>
+                        <span><input id="book14" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf14" type="text"> 本</p>
+                    <button onclick="countBook_40_5(14)" class="button" id="ok14">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(15)">
+                    <h3>學測總複習焦點測驗<br>化學</h3>
+                    <h4>共<span class="totalbox" id="total15"></span>本</h4>
+                </div>
+                <div class="list list15">
+                    <p>
+                        <span><input id="layer15" type="text"> 層　</span>
+                        <span><input id="bale15" type="text"> 捆　</span>
+                        <span><input id="book15" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf15" type="text"> 本</p>
+                    <button onclick="countBook_24_7(15)" class="button" id="ok15">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(16)">
+                    <h3>學測總複習焦點測驗<br>生物</h3>
+                    <h4>共<span class="totalbox" id="total16"></span>本</h4>
+                </div>
+                <div class="list list16">
+                    <p>
+                        <span><input id="layer16" type="text"> 層　</span>
+                        <span><input id="bale16" type="text"> 捆　</span>
+                        <span><input id="book16" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf16" type="text"> 本</p>
+                    <button onclick="countBook_30_5(16)" class="button" id="ok16">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(17)">
+                    <h3>學測總複習焦點測驗<br>地科</h3>
+                    <h4>共<span class="totalbox" id="total17"></span>本</h4>
+                </div>
+                <div class="list list17">
+                    <p>
+                        <span><input id="layer17" type="text"> 層　</span>
+                        <span><input id="bale17" type="text"> 捆　</span>
+                        <span><input id="book17" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf17" type="text"> 本</p>
+                    <button onclick="countBook_25_7(17)" class="button" id="ok17">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(18)">
+                    <h3>學測總複習焦點測驗<br>歷史</h3>
+                    <h4>共<span class="totalbox" id="total18"></span>本</h4>
+                </div>
+                <div class="list list18">
+                    <p>
+                        <span><input id="layer18" type="text"> 層　</span>
+                        <span><input id="bale18" type="text"> 捆　</span>
+                        <span><input id="book18" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf18" type="text"> 本</p>
+                    <button onclick="countBook_35_5(18)" class="button" id="ok18">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(19)">
+                    <h3>學測總複習焦點測驗<br>地理</h3>
+                    <h4>共<span class="totalbox" id="total19"></span>本</h4>
+                </div>
+                <div class="list list19">
+                    <p>
+                        <span><input id="layer19" type="text"> 層　</span>
+                        <span><input id="bale19" type="text"> 捆　</span>
+                        <span><input id="book19" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf19" type="text"> 本</p>
+                    <button onclick="countBook_20_7(19)" class="button" id="ok19">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(20)">
+                    <h3>學測總複習焦點測驗<br>公民</h3>
+                    <h4>共<span class="totalbox" id="total20"></span>本</h4>
+                </div>
+                <div class="list list20">
+                    <p>
+                        <span><input id="layer20" type="text"> 層　</span>
+                        <span><input id="bale20" type="text"> 捆　</span>
+                        <span><input id="book20" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf20" type="text"> 本</p>
+                    <button onclick="countBook_24_7(20)" class="button" id="ok20">OK</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="blockC">學測複習搶分題庫（上）</h2>
+        <div class="block">
+            <div class="box">
+                <div class="title" onclick="showList(21)">
+                    <h3>學測複習搶分題庫（上）<br>國文</h3>
+                    <h4>共<span class="totalbox" id="total21"></span>本</h4>
+                </div>
+                <div class="list list21">
+                    <p>
+                        <span><input id="layer21" type="text"> 層　</span>
+                        <span><input id="bale21" type="text"> 捆　</span>
+                        <span><input id="book21" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf21" type="text"> 本</p>
+                    <button onclick="countBook(21)" class="button" id="ok21">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(22)">
+                    <h3>學測複習搶分題庫（上）<br>英文</h3>
+                    <h4>共<span class="totalbox" id="total22"></span>本</h4>
+                </div>
+                <div class="list list22">
+                    <p>
+                        <span><input id="layer22" type="text"> 層　</span>
+                        <span><input id="bale22" type="text"> 捆　</span>
+                        <span><input id="book22" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf22" type="text"> 本</p>
+                    <button onclick="countBook(22)" class="button" id="ok22">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(23)">
+                    <h3>學測複習搶分題庫（上）<br>數學</h3>
+                    <h4>共<span class="totalbox" id="total23"></span>本</h4>
+                </div>
+                <div class="list list23">
+                    <p>
+                        <span><input id="layer23" type="text"> 層　</span>
+                        <span><input id="bale23" type="text"> 捆　</span>
+                        <span><input id="book23" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf23" type="text"> 本</p>
+                    <button onclick="countBook(23)" class="button" id="ok23">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(24)">
+                    <h3>學測複習搶分題庫（上）<br>社會</h3>
+                    <h4>共<span class="totalbox" id="total24"></span>本</h4>
+                </div>
+                <div class="list list24">
+                    <p>
+                        <span><input id="layer24" type="text"> 層　</span>
+                        <span><input id="bale24" type="text"> 捆　</span>
+                        <span><input id="book24" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf24" type="text"> 本</p>
+                    <button onclick="countBook(24)" class="button" id="ok24">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(25)">
+                    <h3>學測複習搶分題庫（上）<br>自然</h3>
+                    <h4>共<span class="totalbox" id="total25"></span>本</h4>
+                </div>
+                <div class="list list25">
+                    <p>
+                        <span><input id="layer25" type="text"> 層　</span>
+                        <span><input id="bale25" type="text"> 捆　</span>
+                        <span><input id="book25" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf25" type="text"> 本</p>
+                    <button onclick="countBook(25)" class="button" id="ok25">OK</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="blockD">學測複習搶分題庫（下）</h2>
+        <div class="block">
+            <div class="box">
+                <div class="title" onclick="showList(26)">
+                    <h3>學測複習搶分題庫（下）<br>國文</h3>
+                    <h4>共<span class="totalbox" id="total26"></span>本</h4>
+                </div>
+                <div class="list list26">
+                    <p>
+                        <span><input id="layer26" type="text"> 層　</span>
+                        <span><input id="bale26" type="text"> 捆　</span>
+                        <span><input id="book26" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf26" type="text"> 本</p>
+                    <button onclick="countBook(26)" class="button" id="ok26">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(27)">
+                    <h3>學測複習搶分題庫（下）<br>英文</h3>
+                    <h4>共<span class="totalbox" id="total22"></span>本</h4>
+                </div>
+                <div class="list list27">
+                    <p>
+                        <span><input id="layer27" type="text"> 層　</span>
+                        <span><input id="bale27" type="text"> 捆　</span>
+                        <span><input id="book27" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf27" type="text"> 本</p>
+                    <button onclick="countBook(27)" class="button" id="ok27">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(28)">
+                    <h3>學測複習搶分題庫（下）<br>數學</h3>
+                    <h4>共<span class="totalbox" id="total28"></span>本</h4>
+                </div>
+                <div class="list list28">
+                    <p>
+                        <span><input id="layer28" type="text"> 層　</span>
+                        <span><input id="bale28" type="text"> 捆　</span>
+                        <span><input id="book28" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf28" type="text"> 本</p>
+                    <button onclick="countBook(28)" class="button" id="ok28">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(29)">
+                    <h3>學測複習搶分題庫（下）<br>社會</h3>
+                    <h4>共<span class="totalbox" id="total29"></span>本</h4>
+                </div>
+                <div class="list list29">
+                    <p>
+                        <span><input id="layer29" type="text"> 層　</span>
+                        <span><input id="bale29" type="text"> 捆　</span>
+                        <span><input id="book29" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf29" type="text"> 本</p>
+                    <button onclick="countBook(29)" class="button" id="ok29">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(30)">
+                    <h3>學測複習搶分題庫（下）<br>自然</h3>
+                    <h4>共<span class="totalbox" id="total30"></span>本</h4>
+                </div>
+                <div class="list list30">
+                    <p>
+                        <span><input id="layer30" type="text"> 層　</span>
+                        <span><input id="bale30" type="text"> 捆　</span>
+                        <span><input id="book30" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf30" type="text"> 本</p>
+                    <button onclick="countBook(30)" class="button" id="ok30">OK</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="blockED">學測考前60天搶分題庫</h2>
+        <div class="block">
+            <div class="box">
+                <div class="title" onclick="showList(31)">
+                    <h3>學測考前60天搶分題庫<br>國文</h3>
+                    <h4>共<span class="totalbox" id="total31"></span>本</h4>
+                </div>
+                <div class="list list31">
+                    <p>
+                        <span><input id="layer31" type="text"> 層　</span>
+                        <span><input id="bale31" type="text"> 捆　</span>
+                        <span><input id="book31" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf31" type="text"> 本</p>
+                    <button onclick="countBook(31)" class="button" id="ok31">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(32)">
+                    <h3>學測考前60天搶分題庫<br>英文</h3>
+                    <h4>共<span class="totalbox" id="total32"></span>本</h4>
+                </div>
+                <div class="list list32">
+                    <p>
+                        <span><input id="layer32" type="text"> 層　</span>
+                        <span><input id="bale32" type="text"> 捆　</span>
+                        <span><input id="book32" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf32" type="text"> 本</p>
+                    <button onclick="countBook_25_4(32)" class="button" id="ok32">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(33)">
+                    <h3>學測考前60天搶分題庫<br>數學</h3>
+                    <h4>共<span class="totalbox" id="total33"></span>本</h4>
+                </div>
+                <div class="list list33">
+                    <p>
+                        <span><input id="layer33" type="text"> 層　</span>
+                        <span><input id="bale33" type="text"> 捆　</span>
+                        <span><input id="book33" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf33" type="text"> 本</p>
+                    <button onclick="countBook(33)" class="button" id="ok33">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(34)">
+                    <h3>學測考前60天搶分題庫<br>社會</h3>
+                    <h4>共<span class="totalbox" id="total34"></span>本</h4>
+                </div>
+                <div class="list list34">
+                    <p>
+                        <span><input id="layer34" type="text"> 層　</span>
+                        <span><input id="bale34" type="text"> 捆　</span>
+                        <span><input id="book34" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf34" type="text"> 本</p>
+                    <button onclick="countBook_20_5(34)" class="button" id="ok34">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(35)">
+                    <h3>學測考前60天搶分題庫<br>自然</h3>
+                    <h4>共<span class="totalbox" id="total35"></span>本</h4>
+                </div>
+                <div class="list list35">
+                    <p>
+                        <span><input id="layer35" type="text"> 層　</span>
+                        <span><input id="bale35" type="text"> 捆　</span>
+                        <span><input id="book35" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf35" type="text"> 本</p>
+                    <button onclick="countBook_20_5(35)" class="button" id="ok35">OK</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="blockF">上中下系列</h2>
+        <div class="block">
+            <div class="box">
+                <div class="title" onclick="showList(41)">
+                    <h3>化學智慧之路<br>（上）</h3>
+                    <h4>共<span class="totalbox" id="total41"></span>本</h4>
+                </div>
+                <div class="list list41">
+                    <p>
+                        <span><input id="layer41" type="text"> 層　</span>
+                        <span><input id="bale41" type="text"> 捆　</span>
+                        <span><input id="book41" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf41" type="text"> 本</p>
+                    <button onclick="countBook_16_8(41)" class="button" id="ok41">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(42)">
+                    <h3>化學智慧之路<br>（中）</h3>
+                    <h4>共<span class="totalbox" id="total42"></span>本</h4>
+                </div>
+                <div class="list list42">
+                    <p>
+                        <span><input id="layer42" type="text"> 層　</span>
+                        <span><input id="bale42" type="text"> 捆　</span>
+                        <span><input id="book42" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf42" type="text"> 本</p>
+                    <button onclick="countBook_16_8(42)" class="button" id="ok42">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(43)">
+                    <h3>化學智慧之路<br>（下）</h3>
+                    <h4>共<span class="totalbox" id="total43"></span>本</h4>
+                </div>
+                <div class="list list43">
+                    <p>
+                        <span><input id="layer43" type="text"> 層　</span>
+                        <span><input id="bale43" type="text"> 捆　</span>
+                        <span><input id="book43" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf43" type="text"> 本</p>
+                    <button onclick="countBook_16_8(43)" class="button" id="ok43">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(44)">
+                    <h3>生物成醫之路<br>（上）</h3>
+                    <h4>共<span class="totalbox" id="total44"></span>本</h4>
+                </div>
+                <div class="list list44">
+                    <p>
+                        <span><input id="layer44" type="text"> 層　</span>
+                        <span><input id="bale44" type="text"> 捆　</span>
+                        <span><input id="book44" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf44" type="text"> 本</p>
+                    <button onclick="countBook_20_7(44)" class="button" id="ok44">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(45)">
+                    <h3>生物成醫之路<br>（中）</h3>
+                    <h4>共<span class="totalbox" id="total45"></span>本</h4>
+                </div>
+                <div class="list list45">
+                    <p>
+                        <span><input id="layer45" type="text"> 層　</span>
+                        <span><input id="bale45" type="text"> 捆　</span>
+                        <span><input id="book45" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf45" type="text"> 本</p>
+                    <button onclick="countBook_16_7(45)" class="button" id="ok45">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(46)">
+                    <h3>生物成醫之路<br>（下）</h3>
+                    <h4>共<span class="totalbox" id="total46"></span>本</h4>
+                </div>
+                <div class="list list46">
+                    <p>
+                        <span><input id="layer46" type="text"> 層　</span>
+                        <span><input id="bale46" type="text"> 捆　</span>
+                        <span><input id="book46" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf46" type="text"> 本</p>
+                    <button onclick="countBook_16_7(46)" class="button" id="ok46">OK</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="blockG">其他專書</h2>
+        <div class="block">
+            <div class="box">
+                <div class="title" onclick="showList(51)">
+                    <h3>化學<br>實驗總匯</h3>
+                    <h4>共<span class="totalbox" id="total51"></span>本</h4>
+                </div>
+                <div class="list list51">
+                    <p>
+                        <span><input id="layer51" type="text"> 層　</span>
+                        <span><input id="bale51" type="text"> 捆　</span>
+                        <span><input id="book51" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf51" type="text"> 本</p>
+                    <button onclick="countBook_30_4(51)" class="button" id="ok51">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(52)">
+                    <h3>生物<br>實驗總匯</h3>
+                    <h4>共<span class="totalbox" id="total52"></span>本</h4>
+                </div>
+                <div class="list list52">
+                    <p>
+                        <span><input id="layer52" type="text"> 層　</span>
+                        <span><input id="bale52" type="text"> 捆　</span>
+                        <span><input id="book52" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf52" type="text"> 本</p>
+                    <button onclick="countBook_20_7(52)" class="button" id="ok52">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(53)">
+                    <h3>國寫聖典</h3>
+                    <h4>共<span class="totalbox" id="total53"></span>本</h4>
+                </div>
+                <div class="list list53">
+                    <p>
+                        <span><input id="layer53" type="text"> 層　</span>
+                        <span><input id="bale53" type="text"> 捆　</span>
+                        <span><input id="book53" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf53" type="text"> 本</p>
+                    <button onclick="countBook_16_5(53)" class="button" id="ok53">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(54)">
+                    <h3>33國寫<br>輕鬆寫</h3>
+                    <h4>共<span class="totalbox" id="total54"></span>本</h4>
+                </div>
+                <div class="list list54">
+                    <p>
+                        <span><input id="layer54" type="text"> 層　</span>
+                        <span><input id="bale54" type="text"> 捆　</span>
+                        <span><input id="book54" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf54" type="text"> 本</p>
+                    <button onclick="countBook(54)" class="button" id="ok54">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(55)">
+                    <h3>英文作文<br>與翻譯魔法書</h3>
+                    <h4>共<span class="totalbox" id="total55"></span>本</h4>
+                </div>
+                <div class="list list55">
+                    <p>
+                        <span><input id="layer55" type="text"> 層　</span>
+                        <span><input id="bale55" type="text"> 捆　</span>
+                        <span><input id="book55" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf55" type="text"> 本</p>
+                    <button onclick="countBook_12_7(55)" class="button" id="ok55">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(56)">
+                    <h3>英單的力量</h3>
+                    <h4>共<span class="totalbox" id="total56"></span>本</h4>
+                </div>
+                <div class="list list56">
+                    <p>
+                        <span><input id="layer56" type="text"> 層　</span>
+                        <span><input id="bale56" type="text"> 捆　</span>
+                        <span><input id="book56" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf56" type="text"> 本</p>
+                    <button onclick="countBook(56)" class="button" id="ok56">OK</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title" onclick="showList(57)">
+                    <h3>完全突破數學</h3>
+                    <h4>共<span class="totalbox" id="total57"></span>本</h4>
+                </div>
+                <div class="list list57">
+                    <p>
+                        <span><input id="layer57" type="text"> 層　</span>
+                        <span><input id="bale57" type="text"> 捆　</span>
+                        <span><input id="book57" type="text"> 本</span>
+                    </p>
+                    <p>架上 <input id="shelf57" type="text"> 本</p>
+                    <button onclick="countBook_15_7(57)" class="button" id="ok57">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        // countBook_15_7()一綑15本、一層7捆
+        var num1
+        var num2
+        var num3
+        var num4
+
+        function countBook_12_7(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 12 * 7; //幾層幾本
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 12; //幾綑幾本
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_15_7(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 15 * 7; //幾層幾本
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 15; //幾綑幾本
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_16_5(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 16 * 5; //幾層幾本
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 16; //幾綑幾本
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_16_7(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 16 * 7; //幾層幾本
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 16; //幾綑幾本
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_16_8(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 16 * 8;
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 16;
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_16_10(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 16 * 10;
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 16;
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_16_11(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 16 * 11;
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 16;
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_20_5(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 20 * 5;
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 20;
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_20_7(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 20 * 7;
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 20;
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_24_7(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 24 * 7;
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 24;
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_25_4(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 25 * 4;
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 25;
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_25_7(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 25 * 7;
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 25;
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_30_4(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 30 * 4;
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 30;
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_30_5(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 30 * 5;
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 30;
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_30_7(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 30 * 7;
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 30;
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_35_5(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 35 * 5;
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 35;
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+        function countBook_40_5(e) {
+            num1 = parseInt(document.getElementById(`layer${e}`).value) * 40 * 5;
+            num2 = parseInt(document.getElementById(`bale${e}`).value) * 40;
+            num3 = parseInt(document.getElementById(`book${e}`).value);
+            num4 = parseInt(document.getElementById(`shelf${e}`).value);
+            document.getElementById(`total${e}`).textContent = num1 + num2 + num3 + num4;
+        }
+
+        function showList(i) {
+            const list = document.querySelector(`.list${i}`)
+            list.classList.toggle('show')
+        }
+
+    </script>
+
+</body>
+
+</html>
